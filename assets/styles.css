@@ -62,14 +62,14 @@ form select.error {
   border-color: #f91919;
   background: #f9f0f1;
 }
-/*
+
 form small {
   font-size: 14px;
   margin-top: 5px;
   display: block;
   color: #f91919;
 }
-*/
+
 form .password i {
   position: absolute;
   right: 0px;
