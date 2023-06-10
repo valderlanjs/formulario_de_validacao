@@ -11,7 +11,6 @@ const showError = (field, errorText) => {
   errorElement.innerText = errorText;
   field.closest(".form-group").appendChild(errorElement);
 };
-
 // Função para lidar com o envio do formulário
 
 const handleFormData = (e) => {
