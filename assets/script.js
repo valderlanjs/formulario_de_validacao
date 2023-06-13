@@ -3,7 +3,6 @@ const form = document.querySelector("form");
 const passwordInput = document.getElementById("password");
 const passToggleBtn = document.getElementById("pass-toggle-btn");
 // FUNÇÃO PARA EXIBIR MENSAGEM DE ERROR
-
 const showError = (field, errorText) => {
   field.classList.add("error");
   const errorElement = document.createElement("small");
