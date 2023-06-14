@@ -52,7 +52,7 @@ if (fullname === "") {
   showError(fullnameInput, "Escreva seu nome completo");
 }
 if (!emailPattern.test(email)) {
-  showError(emailInput, "Enter a valid email address");
+  showError(emailInput, "Entre com seu endereço de Email");
 }
 if (password === "") {
   showError(passwordInput, "Enter your password");
