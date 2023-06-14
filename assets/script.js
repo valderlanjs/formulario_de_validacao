@@ -34,7 +34,7 @@ const password = passwordInput.value.trim();
 const date = dateInput.value;
 const gender = genderInput.value;
 
-// Regular expression pattern for email validation
+// Padrão de expressão regular para validação de e-mail
 
 const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
