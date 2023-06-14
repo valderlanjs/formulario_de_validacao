@@ -55,13 +55,13 @@ if (!emailPattern.test(email)) {
   showError(emailInput, "Entre com seu endereço de Email");
 }
 if (password === "") {
-  showError(passwordInput, "Enter your password");
+  showError(passwordInput, "Entre com sua Senha");
 }
 if (date === "") {
-  showError(dateInput, "Select your date of birth");
+  showError(dateInput, "Selecione a sua data de nascimento");
 }
 if (gender === "") {
-  showError(genderInput, "Select your gender");
+  showError(genderInput, "Selecione seu gênero");
 }
 
 // Verificando quaisquer erros remanescentes antes do envio do formulário
