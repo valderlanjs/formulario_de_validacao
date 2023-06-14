@@ -2,7 +2,9 @@
 const form = document.querySelector("form");
 const passwordInput = document.getElementById("password");
 const passToggleBtn = document.getElementById("pass-toggle-btn");
+
 // FUNÇÃO PARA EXIBIR MENSAGEM DE ERROR
+
 const showError = (field, errorText) => {
   field.classList.add("error");
   const errorElement = document.createElement("small");
@@ -10,11 +12,13 @@ const showError = (field, errorText) => {
   errorElement.innerText = errorText;
   field.closest(".form-group").appendChild(errorElement);
 };
+
 // Função para lidar com o envio do formulário
 
 const handleFormData = (e) => {
   e.preventDefault();
 };
+
 // Recuperando elementos de entrada
 
 const fullnameInput = document.getElementById("fullname");
@@ -45,7 +49,7 @@ document
 // Executando verificações de validação
 
 if (fullname === "") {
-  showError(fullnameInput, "Enter your full name");
+  showError(fullnameInput, "Escreva seu nome completo");
 }
 if (!emailPattern.test(email)) {
   showError(emailInput, "Enter a valid email address");
