@@ -25,7 +25,8 @@ const handleFormData = (e) => {
   const genderInput = document.getElementById("gender");
 
   // Obtendo valores aparados de campos de entrada
-
+  // Utilizado o método trim() para retirar os espaços em branco do input.
+  // Os valores inseridos no fullnameInput serão atribuidos ao fullname porem sem espaços em branco
   const fullname = fullnameInput.value.trim();
   const email = emailInput.value.trim();
   const password = passwordInput.value.trim();
@@ -36,7 +37,7 @@ const handleFormData = (e) => {
 
   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-  //LINPANDO AS MENSAGENS DE ERROS ANTERIORES
+  //Limpando as mensagens de error anteriores.
   document
     .querySelectorAll(".form-group .error")
     .forEach((field) => field.classList.remove("error"));
@@ -44,7 +45,7 @@ const handleFormData = (e) => {
     .querySelectorAll(".error-text")
     .forEach((errorText) => errorText.remove());
 
-  // Executando verificações de validação
+  // Executando verificações de validação para confirmar que foi inseridos valores corretos, caso contrário é chamdo a função sgowError.
 
   if (fullname === "") {
     showError(fullnameInput, "Escreva seu nome completo");
